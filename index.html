@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="bg-gray-900 text-white scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banda Peregrinos - Rock Católico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .font-oswald {
+      font-family: 'Oswald', sans-serif;
+    }
+    /* Cores atualizadas para combinar com a imagem (azul vibrante e rosa/vermelho) */
+    .text-primary-accent {
+      color: #00BFFF; /* Azul vibrante, como um dos brilhos da imagem */
+    }
+    .bg-primary-accent {
+      background-color: #00BFFF;
+    }
+    .border-primary-accent {
+      border-color: #00BFFF;
+    }
+    .text-secondary-accent {
+      color: #FF4081; /* Rosa/vermelho vibrante, como o outro brilho da imagem */
+    }
+    .bg-gray-900 {
+      background-color: #1a1a1a;
+    }
+    .bg-gray-800 {
+      background-color: #2a2a2a;
+    }
+    .bg-gray-700 {
+        background-color: #3a3a3a;
+    }
+    .navbar-link:hover {
+        color: #00BFFF; /* Hover azul vibrante */
+    }
+    /* Estilo do botão transparente com bordas brancas e hover branco */
+    .btn-action {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 0.8rem 2rem;
+        border-radius: 0.25rem;
+        font-weight: 600;
+        transition: all 0.3s ease; /* Transição para todas as propriedades */
+    }
+    .btn-action:hover {
+        background-color: white;
+        color: black; /* Texto preto no hover branco */
+        border-color: white; /* Mantém a borda branca no hover */
+    }
+    .hero-section {
+      background-image: url('background2.png'); /* Nova imagem de fundo */
+      background-size: cover;
+      background-position: center;
+      height: 85vh; /* Altura para a tela inicial */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .section-dark {
+        background-color: #0d0d0d;
+    }
+    .section-light {
+        background-color: #1a1a1a;
+    }
+    .card {
+        background-color: #2a2a2a;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        padding: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+    }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+  </style>
+</head>
+<body class="font-sans">
+
+  <header class="bg-gray-900 shadow-lg sticky top-0 z-50 py-4">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <a href="#inicio" class="text-3xl font-oswald font-bold tracking-wider text-primary-accent uppercase">Peregrinos</a>
+      <nav class="space-x-8 text-md font-semibold uppercase">
+        <a href="#inicio" class="navbar-link text-white transition duration-300">Início</a>
+        <a href="#agenda" class="navbar-link text-white transition duration-300">Agenda</a>
+        <a href="#quem-somos" class="navbar-link text-white transition duration-300">Banda</a>
+<!--        <a href="#multimidia" class="navbar-link text-white transition duration-300">Multimídia</a>-->
+        <a href="#loja" class="navbar-link text-white transition duration-300">Loja</a>
+        <a href="#contato" class="navbar-link text-white transition duration-300">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!--<section id="inicio" class="hero-section text-white relative">
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="relative z-10 text-center">
+      <img src="https://i.ibb.co/3sXf20f/WhatsApp-Image-2025-07-24-at-19-31-38-jpeg-1123x794-07-24-2025-10-15-PM.png" alt="Logo Santa Terça" class="mx-auto w-80 mb-8 drop-shadow-2xl">
+      <h2 class="text-6xl md:text-7xl font-oswald font-bold mb-4 uppercase text-white">BANDA PEREGRINOS</h2>
+      <p class="text-xl md:text-2xl font-light mb-8">O Rock da Fé que Move Montanhas</p>
+      <div style="margin-top: 300px;">
+        <a href="#agenda" class="btn-action hover:scale-105 transition transform">Agenda Shows</a>
+      </div>
+    </div>
+  </section>-->
+
+  <section id="inicio" class="hero-section text-white relative">
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="relative z-10 text-center flex flex-col justify-end items-center h-full pb-16"> <a href="#agenda" class="btn-action hover:scale-105 transition transform mb-2">Agenda Shows</a> </div>
+</section>
+
+  <!--<section id="destaques" class="py-20 px-6 section-dark text-center">
+    <h2 class="text-4xl font-oswald font-bold mb-12 text-secondary-accent uppercase">Últimos Destaques</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250/333333/FFFFFF?text=NOVO+SINGLE" alt="Novo Single" class="rounded-t-lg mb-4 w-full h-auto">
+        <h3 class="text-xl font-semibold mb-2 text-primary-accent">Lançamento: Single "Caminho da Cruz"</h3>
+        <p class="text-gray-300 text-sm">Nosso novo single já está disponível em todas as plataformas digitais! Uma canção poderosa para o seu coração.</p>
+        <a href="#" class="inline-block mt-4 text-secondary-accent hover:underline">Ouvir Agora</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250/333333/FFFFFF?text=ENTREVISTA" alt="Entrevista" class="rounded-t-lg mb-4 w-full h-auto">
+        <h3 class="text-xl font-semibold mb-2 text-primary-accent">Entrevista Exclusiva na Rádio Fé</h3>
+        <p class="text-gray-300 text-sm">Fomos convidados para um bate-papo incrível onde falamos sobre nossa música e missão. Perdeu? Ouça aqui!</p>
+        <a href="#" class="inline-block mt-4 text-secondary-accent hover:underline">Ouvir Entrevista</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250/333333/FFFFFF?text=FOTO+SHOW" alt="Show Lotado" class="rounded-t-lg mb-4 w-full h-auto">
+        <h3 class="text-xl font-semibold mb-2 text-primary-accent">Show Inesquecível em Salvador</h3>
+        <p class="text-gray-300 text-sm">Mais de 10 mil pessoas louvando conosco! Uma noite memorável de fé e rock. Veja as fotos!</p>
+        <a href="#" class="inline-block mt-4 text-secondary-accent hover:underline">Ver Galeria</a>
+      </div>
+    </div>
+  </section>-->
+
+  <section id="agenda" class="py-20 px-6 section-light text-center">
+    <h2 class="text-4xl font-oswald font-bold mb-12 text-primary-accent uppercase">Agenda</h2>
+    <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-lg shadow-xl border border-primary-accent">
+      <ul class="text-left space-y-6 text-xl text-gray-200">
+        <li>
+          <strong class="text-secondary-accent">09/09/2025:</strong> Hangar Rock Burger Bar - Paranaguá, PR
+          <span class="block text-sm text-gray-400">Início: 20h00</span>
+          <a href="https://www.google.com/maps/place/Hangar+Rock+Burger+Bar/@-25.5371375,-48.5328958,17z/data=!3m1!4b1!4m6!3m5!1s0x94db9a91b0bb772b:0xca6a003233ab4be3!8m2!3d-25.5371424!4d-48.5303209!16s%2Fg%2F11fzb0ttbw?entry=ttu&g_ep=EgoyMDI1MDcyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-400 hover:underline text-sm ml-2">[Ver no Mapa]</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+ <!-- <section id="quem-somos" class="py-20 px-6 section-dark text-center">
+    <h2 class="text-4xl font-oswald font-bold mb-8 text-secondary-accent uppercase">Banda</h2>
+    <div class="max-w-4xl mx-auto">
+      <img src="https://via.placeholder.com/800x450/333333/FFFFFF?text=FOTO+OFICIAL+DA+BANDA" alt="Foto Oficial da Banda Peregrinos" class="mx-auto rounded-lg shadow-lg mb-8 border-2 border-primary-accent">
+      <p class="text-xl leading-relaxed text-gray-300 mb-6">
+        A <strong class="text-primary-accent">Banda Peregrinos</strong> surgiu da união de corações e talentos dedicados a levar a mensagem de Cristo
+        através do poder do rock. Formada por <strong class="text-secondary-accent">[Membros da Banda: ex: João - Vocal, Pedro - Guitarra, Maria - Baixo, Lucas - Bateria]</strong>,
+        nossa jornada é pautada pela fé, energia e pela busca constante em tocar almas com cada nota.
+        Acreditamos que a música é um caminho poderoso para evangelizar e inspirar.
+      </p>
+      <p class="text-lg leading-relaxed text-gray-400">
+        Com letras que abordam temas de esperança, redenção e a força do Evangelho, a Banda Peregrinos convida a todos
+        para uma experiência sonora e espiritual única. Venha peregrinar conosco nessa jornada de fé e rock 'n' roll!
+      </p>
+    </div>
+  </section>-->
+
+  <!--<section id="multimidia" class="py-20 px-6 section-light text-center">
+    <h2 class="text-4xl font-oswald font-bold mb-12 text-primary-accent uppercase">Multimídia</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="card p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-secondary-accent">Último Videoclipe: "Rochas Firmes"</h3>
+        <div class="video-container mb-4">
+          <iframe src="http://googleusercontent.com/youtube.com/20" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="text-gray-300 mb-4">Assista agora ao nosso novo videoclipe, uma produção especial que transmite a mensagem de fé e perseverança.</p>
+        <a href="http://googleusercontent.com/youtube.com/21" target="_blank" class="btn-action">Ver Mais Vídeos</a>
+      </div>
+      <div class="card p-6">
+        <h3 class="text-2xl font-semibold mb-4 text-secondary-accent">Ouça Nossa Música</h3>
+        <img src="https://via.placeholder.com/300x300/333333/FFFFFF?text=CAPA+DO+ALBUM" alt="Capa do Álbum" class="mx-auto w-64 h-64 object-cover rounded-lg mb-6 border border-primary-accent">
+        <p class="text-gray-300 mb-4">Nossas canções estão disponíveis nas principais plataformas de streaming. Ouça, compartilhe e deixe o som da fé te tocar!</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#" target="_blank" class="btn-action text-sm">Spotify</a>
+          <a href="#" target="_blank" class="btn-action text-sm">Deezer</a>
+          <a href="#" target="_blank" class="btn-action text-sm">Apple Music</a>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <!--<section id="loja" class="py-20 px-6 section-dark text-center">
+    <h2 class="text-4xl font-oswald font-bold mb-12 text-secondary-accent uppercase">Nossa Loja</h2>
+    <p class="mb-10 text-xl text-gray-300">Compre produtos exclusivos da Banda Peregrinos e ajude a nossa missão!</p>
+    <div class="flex justify-center flex-wrap gap-8">
+      <div class="card w-72">
+        <img src="https://via.placeholder.com/300x300/333333/FFFFFF?text=CAMISETA+PEREGRINOS" alt="Camiseta Banda Peregrinos" class="rounded mb-6 border border-gray-600">
+        <h3 class="font-bold text-2xl text-primary-accent mb-2">Camiseta Oficial "Peregrinos"</h3>
+        <p class="text-secondary-accent text-xl font-semibold mb-4">R$ 79,90</p>
+        <button class="btn-action">Comprar</button>
+      </div>
+      <div class="card w-72">
+        <img src="https://via.placeholder.com/300x300/333333/FFFFFF?text=CD+PEREGRINOS" alt="CD da Banda Peregrinos" class="rounded mb-6 border border-gray-600">
+        <h3 class="font-bold text-2xl text-primary-accent mb-2">CD "Caminho da Graça"</h3>
+        <p class="text-secondary-accent text-xl font-semibold mb-4">R$ 49,90</p>
+        <button class="btn-action">Comprar</button>
+      </div>
+      <div class="card w-72">
+        <img src="https://via.placeholder.com/300x300/333333/FFFFFF?text=BONÉ+PEREGRINOS" alt="Boné Banda Peregrinos" class="rounded mb-6 border border-gray-600">
+        <h3 class="font-bold text-2xl text-primary-accent mb-2">Boné "Rock da Fé"</h3>
+        <p class="text-secondary-accent text-xl font-semibold mb-4">R$ 59,90</p>
+        <button class="btn-action">Comprar</button>
+      </div>
+    </div>
+  </section>-->
+
+  <section id="contato" class="py-20 px-6 section-light text-center">
+    <h2 class="text-4xl font-oswald font-bold mb-12 text-primary-accent uppercase">Contato</h2>
+    <div class="max-w-2xl mx-auto card p-8">
+      <!--<p class="text-xl text-gray-300 mb-6">Para agendamentos, parcerias ou dúvidas, entre em contato conosco:</p>
+      <div class="space-y-4 text-left text-lg text-gray-200">
+        <p><strong class="text-secondary-accent">Email:</strong> <a href="mailto:contato@bandaperegrinos.com.br" class="text-blue-400 hover:underline">contato@bandaperegrinos.com.br</a></p>
+        <p><strong class="text-secondary-accent">Telefone:</strong> (XX) XXXX-XXXX</p>
+        <p><strong class="text-secondary-accent">Redes Sociais:</strong></p>
+        <div class="flex justify-center gap-6 mt-4">
+          <a href="#" target="_blank" class="text-3xl text-gray-400 hover:text-primary-accent transition duration-300">
+            <img src="https://via.placeholder.com/30x30/333333/FFFFFF?text=FB" alt="Facebook" class="inline-block">
+          </a>
+          <a href="#" target="_blank" class="text-3xl text-gray-400 hover:text-primary-accent transition duration-300">
+            <img src="https://via.placeholder.com/30x30/333333/FFFFFF?text=IG" alt="Instagram" class="inline-block">
+          </a>
+          <a href="#" target="_blank" class="text-3xl text-gray-400 hover:text-primary-accent transition duration-300">
+            <img src="https://via.placeholder.com/30x30/333333/FFFFFF?text=YT" alt="YouTube" class="inline-block">
+          </a>
+        </div>
+      </div>-->
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 py-8 text-center text-sm text-gray-500 border-t border-primary-accent">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="mb-2">© 2025 Banda Peregrinos — Todos os direitos reservados.</p>
+      <!--<p>Desenvolvido com Fé e Rock 'n' Roll | <a href="#" class="text-gray-400 hover:text-primary-accent">Política de Privacidade</a></p>-->
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('nav a');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // Impede o comportamento padrão do link
+
+          const targetId = this.getAttribute('href'); // Obtém o ID da seção alvo (ex: "#agenda")
+          const targetSection = document.querySelector(targetId); // Seleciona a seção
+
+          if (targetSection) {
+            // Rola suavemente até a seção
+            window.scrollTo({
+              top: targetSection.offsetTop - document.querySelector('header').offsetHeight, // Ajusta pela altura do header fixo
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
