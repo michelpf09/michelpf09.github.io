@@ -64,7 +64,7 @@ ibrante e rosa/vermelho) */
       border-color: #00BFFF;
     }
     .text-secondary-accent {
-      color: #FF4081; /* Rosa/vermelho vibrante, como o outro brilho da imagem */
+      color: #ffffff; /* Rosa/vermelho vibrante, como o outro brilho da imagem */
     }
     .bg-gray-900 {
       background-color: #1a1a1a;
@@ -97,7 +97,7 @@ ibrante e rosa/vermelho) */
       background-image: url('background2.png'); /* Nova imagem de fundo */
       background-size: cover;
       background-position: center;
-      height: 85vh; /* Altura para a tela inicial */
+      height: 95vh; /* Altura para a tela inicial */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -154,6 +154,7 @@ ibrante e rosa/vermelho) */
     <nav id="menu" class="hidden sm:flex space-x-6 text-sm font-semibold uppercase">
       <a href="#inicio" class="navbar-link text-white">Início</a>
       <a href="#agenda" class="navbar-link text-white">Agenda</a>
+      <a href="#santaterca" class="navbar-link text-white">Santa Terça</a>
       <a href="#quem-somos" class="navbar-link text-white">Banda</a>
       <a href="#loja" class="navbar-link text-white">Loja</a>
       <a href="#contato" class="navbar-link text-white">Contato</a>
@@ -194,7 +195,8 @@ ibrante e rosa/vermelho) */
   <section id="inicio" class="hero-section text-white relative">
     <div class="absolute inset-0 bg-black opacity-60"></div>
     <div class="relative z-10 text-center flex flex-col justify-end items-center h-full pb-16"> <a href="#agenda" class="btn-action hover:scale-105 transition transform mb-2">Agenda Shows</a> </div>
-</section>
+  </section>
+
 
   <!--<section id="destaques" class="py-20 px-6 section-dark text-center">
     <h2 class="text-4xl font-oswald font-bold mb-12 text-secondary-accent uppercase">Últimos Destaques</h2>
@@ -220,18 +222,62 @@ ibrante e rosa/vermelho) */
     </div>
   </section>-->
 
-  <section id="agenda" class="py-20 px-6 section-light text-center">
-    <h2 class="text-4xl font-oswald font-bold mb-12 text-primary-accent uppercase">Agenda</h2>
-    <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-lg shadow-xl border border-primary-accent">
-      <ul class="text-left space-y-6 text-xl text-gray-200">
-        <li>
-          <strong class="text-secondary-accent">09/09/2025:</strong> Hangar Rock Burger Bar - Paranaguá, PR
-          <span class="block text-sm text-gray-400">Início: 20h00</span>
-          <a href="https://www.google.com/maps/place/Hangar+Rock+Burger+Bar/@-25.5371375,-48.5328958,17z/data=!3m1!4b1!4m6!3m5!1s0x94db9a91b0bb772b:0xca6a003233ab4be3!8m2!3d-25.5371424!4d-48.5303209!16s%2Fg%2F11fzb0ttbw?entry=ttu&g_ep=EgoyMDI1MDcyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-400 hover:underline text-sm ml-2">[Ver no Mapa]</a>
-        </li>
-      </ul>
+  <section id="agenda" class="py-20 px-4 sm:px-6 section-light text-center">
+  <h2 class="text-4xl font-oswald font-bold mb-12 text-primary-accent uppercase">Agenda</h2>
+
+  <div class="max-w-3xl mx-auto space-y-6">
+    <!-- Evento -->
+    <div class="bg-gray-800 p-6 sm:p-8 rounded-lg shadow-xl border border-primary-accent text-left">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-2">
+        <div class="text-secondary-accent text-2xl font-bold flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          09/09/2025
+        </div>
+        <span class="text-sm text-gray-400 mt-2 sm:mt-0">Início: 20h00</span>
+      </div>
+
+      <p class="text-xl text-gray-200 mb-2">Hangar Rock Burger Bar — <span class="text-gray-400">Paranaguá, PR</span></p>
+
+      <a href="https://www.google.com/maps/place/Hangar+Rock+Burger+Bar/@-25.5371375,-48.5328958,17z/data=!3m1!4b1!4m6!3m5!1s0x94db9a91b0bb772b:0xca6a003233ab4be3!8m2!3d-25.5371424!4d-48.5303209!16s%2Fg%2F11fzb0ttbw?entry=ttu"
+         target="_blank"
+         class="inline-block mt-3 text-sm text-blue-400 hover:underline">
+         📍 Ver no Mapa
+      </a>
     </div>
-  </section>
+  </div>
+</section>
+
+
+<section
+  id="santaterca"
+  class="py-20 px-6 text-center bg-black"
+>
+  <div class="max-w-4xl mx-auto text-white">
+    <h2 class="text-4xl font-oswald font-bold mb-6 text-primary-accent uppercase">Santa Terça</h2>
+
+    <!-- Logo da Santa Terça -->
+    <div class="mb-20">
+      <img src="santaterca2.png" alt="Logo Santa Terça" class="mx-auto w-64 sm:w-80 drop-shadow-2xl">
+    </div>
+
+    <p class="text-xl leading-relaxed text-gray-200 mb-6">
+      A <strong class="text-secondary-accent">Santa Terça</strong> é um momento especial de espiritualidade e música promovido pela Banda Peregrinos.
+      Todas as terças-feiras, nos reunimos para celebrar a fé com muito <strong>rock católico</strong>, canções autorais e mensagens que tocam o coração.
+    </p>
+
+    <p class="text-lg leading-relaxed text-gray-300">
+      Inspirados pela força da evangelização através da música, a Santa Terça se tornou um movimento que
+      alcança corações, especialmente dos jovens, convidando todos a uma vivência profunda com Deus por meio da arte, da palavra e da energia do rock cristão.
+    </p>
+  </div>
+</section>
+
+
+
+
+
 
  <!-- <section id="quem-somos" class="py-20 px-6 section-dark text-center">
     <h2 class="text-4xl font-oswald font-bold mb-8 text-secondary-accent uppercase">Banda</h2>
@@ -298,6 +344,74 @@ ibrante e rosa/vermelho) */
       </div>
     </div>
   </section>-->
+
+  <section id="redes-sociais" class="py-20 px-4 sm:px-6 section-light text-center">
+  <h2 class="text-4xl font-oswald font-bold mb-12 text-primary-accent uppercase">Redes Sociais</h2>
+
+  <div class="max-w-3xl mx-auto space-y-6">
+    <div class="bg-gray-800 p-6 sm:p-8 rounded-lg shadow-xl border border-primary-accent text-left">
+      <p class="text-xl text-gray-200 mb-6">Siga-nos nas redes sociais para ficar por dentro das novidades!</p>
+      
+      <div class="flex justify-center gap-10 text-primary-accent">
+        <!-- Facebook -->
+        <!--<a href="https://facebook.com/sua_pagina" target="_blank" aria-label="Facebook" class="hover:text-blue-600 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24" >
+            <path d="M22 12a10 10 0 10-11.5 9.87v-6.99H8v-2.88h2.5v-2.2c0-2.5 1.49-3.9 3.77-3.9 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.23 0-1.62.77-1.62 1.56v1.88h2.76l-.44 2.88h-2.32v6.99A10 10 0 0022 12z"/>
+          </svg>
+        </a>-->
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/santatercabr/" target="_blank" aria-label="Instagram" class="hover:text-pink-500 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" >
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37a4 4 0 11-4.73-4.73 4 4 0 014.73 4.73z" />
+            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+          </svg>
+        </a>
+
+        <!-- Twitter -->
+        <!--<a href="https://twitter.com/sua_pagina" target="_blank" aria-label="Twitter" class="hover:text-blue-400 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24" >
+            <path d="M23 3a10.9 10.9 0 01-3.14.86 4.48 4.48 0 001.98-2.48 9.04 9.04 0 01-2.88 1.1 4.52 4.52 0 00-7.69 4.13 12.85 12.85 0 01-9.33-4.73 4.52 4.52 0 001.39 6.04 4.45 4.45 0 01-2.05-.57v.06a4.51 4.51 0 003.62 4.43 4.52 4.52 0 01-2.04.08 4.53 4.53 0 004.22 3.14 9.06 9.06 0 01-5.6 1.94A9.3 9.3 0 012 19.55a12.75 12.75 0 006.92 2.03c8.3 0 12.85-6.87 12.85-12.83 0-.2 0-.42-.02-.63A9.22 9.22 0 0023 3z"/>
+          </svg>
+        </a>-->
+
+        <!-- YouTube -->
+        <!--<a href="https://youtube.com/sua_pagina" target="_blank" aria-label="YouTube" class="hover:text-red-600 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24" >
+            <path d="M19.8 7.2s-.2-1.4-.8-2a3.37 3.37 0 00-2.4-1.6C14.3 3 12 3 12 3s-2.3 0-4.6.6a3.37 3.37 0 00-2.4 1.6c-.6.6-.8 2-.8 2S4 9 4 10.5v3c0 1.5.2 3.3.2 3.3s.2 1.4.8 2a3.27 3.27 0 002.4 1.6c2.2.4 4.6.4 4.6.4s2.3 0 4.6-.4a3.27 3.27 0 002.4-1.6c.6-.6.8-2 .8-2s.2-1.8.2-3.3v-3c0-1.5-.2-3.3-.2-3.3zM10 14.5v-5l4 2.5-4 2.5z"/>
+          </svg>
+        </a>-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ouvir-musica" class="py-20 px-4 sm:px-6 section-light text-center">
+  <h2 class="text-4xl font-oswald font-bold mb-12 text-primary-accent uppercase">Ouça Nossa Música</h2>
+
+  <div class="max-w-3xl mx-auto bg-gray-800 p-6 sm:p-8 rounded-lg shadow-xl border border-primary-accent">
+    <p class="text-xl text-gray-200 mb-6">
+      Aproveite uma das nossas músicas diretamente aqui no site!
+    </p>
+
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe
+        src="https://open.spotify.com/embed/track/2QMxU9Gfz58w8lCAXudK65" 
+        width="100%" 
+        height="80" 
+        frameborder="0" 
+        allowtransparency="true" 
+        allow="encrypted-media" 
+        class="rounded-lg"
+        title="Spotify Player"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
 
   <section id="contato" class="py-20 px-6 section-light text-center">
     <h2 class="text-4xl font-oswald font-bold mb-12 text-primary-accent uppercase">Contato</h2>
